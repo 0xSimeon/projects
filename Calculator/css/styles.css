@@ -81,7 +81,7 @@ html {
 
 @media only screen and (max-width: 43.75em) {
 	.wrapper {
-		padding: 0; 
+		padding: .5rem;  
 	}
 	.calc__button,
 	.equal,
