@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calculator.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="screen">
+      0
+      </section>
+
+      <!-- <section class="section__calc-buttons"> -->
+        <div class="section__calc">
+            <button class="clear calc__button--double" >C</button>
+            <button class="undo calc__button--symbols" >&larr;</button>
+            <button class="calc__button calc__button--symbols" data-num="/">&divide;</button>
+        </div>
+        <div class="section__calc">
+          <button class="calc__button" data-num="7">7</button>
+          <button class="calc__button" data-num="8">8</button>
+          <button class="calc__button" data-num="9">9</button>
+          <button class="calc__button calc__button--symbols" data-num="*">&times;</button>
+        </div>
+        <div class="section__calc">
+            <button class="calc__button" data-num="4">4</button>
+            <button class="calc__button" data-num="5">5</button>
+            <button class="calc__button" data-num="6">6</button>
+            <button class="calc__button calc__button--symbols" data-num="-">&minus;</button>
+        </div>
+        <div class="section__calc"> 
+            <button class="calc__button" data-num="1">1</button>
+            <button class="calc__button" data-num="2">2</button>
+            <button class="calc__button" data-num="3">3</button>
+            <button class="calc__button  calc__button--symbols" data-num="+">&plus;</button>
+        </div>
+        <div class="section__calc">
+            <button class="calc__button calc__button--triple" data-num="0">0</button>
+            <button class="equal  calc__button--symbols" data-num="=" >&equals;</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
