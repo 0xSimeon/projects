@@ -20,7 +20,7 @@ html {
 
 .section__calc {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	margin-bottom: 0.5%;
 }
@@ -81,16 +81,17 @@ html {
 
 @media only screen and (max-width: 43.75em) {
 	.wrapper {
-		padding: .5rem;  
+		padding: 1rem;   
 	}
 	.calc__button,
 	.equal,
 	.clear,
 	.undo {
-		height: 14rem;    
+		height: calc(100vh - 80vh);   
 	}
 
 	.screen {
-		font-size: 7rem; 
+		padding: 1rem .5rem; 
+		font-size: 5rem; 
 	}
 }
