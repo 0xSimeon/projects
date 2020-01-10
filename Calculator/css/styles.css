@@ -1,71 +1,96 @@
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
 }
-body {
-  padding: 0;
-  margin: 0;
-}
+
 .wrapper {
-  width: 400px;
-  background-color: black;
-  color: white;
-  margin: 5rem auto; 
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: 4rem;
+	height: 100%;
 }
 
 .section__calc {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  margin-bottom: 0.5%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 0.5%;
 }
 
 .screen {
-  text-align: right;
-  font-family: "Courier New", Courier, monospace;
-  padding: 2rem 0.5rem;
-  font-size: 4rem;
+	text-align: right;
+	font-family: "Courier New", Courier, monospace;
+	padding: 2rem 0.5rem;
+	font-size: 4rem;
 }
 
-.calc__button, .equal, .clear, .undo {
-  background-color: #d8d9db;
-  color: #000000;
-  border: none;
-  font-size: 4rem;
-  height: 10rem;
-  flex-basis: 24.5%;
-  cursor: pointer;
-  outline: none; 
+.calc__button,
+.equal,
+.clear,
+.undo {
+	background-color: #d8d9db;
+	color: #000000;
+	border: none;
+	font-size: 4rem;
+	height: 15vh;  
+	flex-basis: 24.5%;
+	cursor: pointer;
+	outline: none;
 }
 
 .calc__button--symbols {
-  background-color: #df974c;
-  color: white;
+	background-color: #df974c;
+	color: white;
 }
 
-.calc__button:hover, .equal:hover, .clear:hover, .undo:hover {
-  background-color: #ebebeb;  
+.calc__button:hover,
+.equal:hover,
+.clear:hover,
+.undo:hover {
+	background-color: #ebebeb;
 }
-.calc__button:active, .equal:active, .clear:active, .undo:active {
-  background-color: #bbbcbe;  
+.calc__button:active,
+.equal:active,
+.clear:active,
+.undo:active {
+	background-color: #bbbcbe;
 }
 
 .calc__button--symbols:hover {
-  background-color: #dfb07e;
+	background-color: #dfb07e;
 }
 .calc__button--symbols:active {
-  background-color: #dd8d37;  
+	background-color: #dd8d37;
 }
 
 .calc__button--double {
-  flex-basis: 49.7%;
+	flex-basis: 49.7%;
 }
 
 .calc__button--triple {
-  flex-basis: 74.8%;
+	flex-basis: 74.8%;
+}
+
+@media only screen and (max-width: 43.75em) {
+	.wrapper {
+		padding: 0; 
+	}
+	.calc__button,
+	.equal,
+	.clear,
+	.undo {
+		height: 14rem;    
+	}
+
+	.screen {
+		font-size: 7rem; 
+	}
 }
