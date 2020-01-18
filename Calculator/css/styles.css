@@ -1,22 +1,26 @@
-html {
-	box-sizing: border-box;
-	font-size: 62.5%;
-	scroll-behavior: smooth; 
-}
+
 *,
 *::before,
 *::after {
 	padding: 0;
 	margin: 0;
 	box-sizing: inherit;
-	
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
 }
 
 .wrapper {
 	width: 100%;
-	background-color: black;
 	color: white;
-	padding: 4rem;
+	padding: 3rem;
 	height: 100%;
 }
 
@@ -30,7 +34,7 @@ html {
 .screen {
 	text-align: right;
 	font-family: "Courier New", Courier, monospace;
-	padding: 2rem 0.5rem;
+	padding: 1.5rem 0.5rem;
 	font-size: 4rem;
 }
 
@@ -42,14 +46,14 @@ html {
 	color: #000000;
 	border: none;
 	font-size: 4rem;
-	height: 15vh;  
+	height: 15vh;
 	flex-basis: 24.5%;
 	cursor: pointer;
 	outline: none;
 }
 
 .calc__button--symbols {
-	background-color: #df974c;
+	background-color: #dd8d37;
 	color: white;
 }
 
@@ -57,7 +61,7 @@ html {
 .equal:hover,
 .clear:hover,
 .undo:hover {
-	background-color: #ebebeb;
+	background-color: #fdfbfb;
 }
 .calc__button:active,
 .equal:active,
@@ -67,11 +71,9 @@ html {
 }
 
 .calc__button--symbols:hover {
-	background-color: #dfb07e;
+	background-color: #f3ac60;
 }
-.calc__button--symbols:active {
-	background-color: #dd8d37;
-}
+
 
 .calc__button--double {
 	flex-basis: 49.7%;
@@ -81,19 +83,41 @@ html {
 	flex-basis: 74.8%;
 }
 
+footer {
+	color: white; 
+	background: #000;  
+	padding: 2rem; 
+	font-size: 2.5rem;
+	text-transform: uppercase; 
+}
+
+footer p {
+	text-align: center; 
+}
+
+footer a {
+	text-decoration: none; 
+	color: #dd8d37;
+	transition: all .2s; 
+
+}
+
+footer a:hover {
+	color: #eeeded; 
+}
+
 @media only screen and (max-width: 43.75em) {
 	.wrapper {
-		padding: .5rem;   
+		padding: 0.5rem;
 	}
-	.calc__button,
-	.equal,
-	.clear,
-	.undo {
-		height: calc(100vh - 80vh);   
-	}
+	
 
 	.screen {
-		padding: 1rem .5rem; 
-		font-size: 5rem; 
+		padding: 1rem 0.5rem;
+		font-size: 5rem;
+	}
+
+	footer {
+		font-size: 1.6rem; 
 	}
 }
