@@ -39,7 +39,10 @@ function clearScreen() {
 	display = "";
 }
 
+
+// Todo: This area is yet to be done
 // Undo
+
 
 function undoInput() {
 	display = new Array();
@@ -47,3 +50,11 @@ function undoInput() {
 	getDisplay();
 	display = screen.textContent;
 }
+
+// Footer date - Updated automatically
+
+const date =  new Date().getFullYear(); 
+document.getElementById('year').innerHTML = date; 
+
+
+ 
