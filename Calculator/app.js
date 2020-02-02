@@ -6,15 +6,6 @@ const undo = document.querySelector(".undo");
 
 let display = "";
 
-loadEventListeners();
-
-function loadEventListeners() {
-	screen.addEventListener("click", getDisplay);
-	clear.addEventListener("click", clearScreen);
-	undo.addEventListener("click", undoInput);
-	equal.addEventListener("click", getResult);
-}
-
 button.forEach(button => {
 	button.addEventListener("click", () => {
 		//logic for button
@@ -23,10 +14,12 @@ button.forEach(button => {
 	});
 });
 
+
 function getDisplay() {
 	display += buttonValue;
-
 	screen.textContent = display;
+
+//todo: add screen character limit of 14
 }
 
 function getResult() {
@@ -39,22 +32,28 @@ function clearScreen() {
 	display = "";
 }
 
-
-// Todo: This area is yet to be done
-// Undo
-
+/* Implements the delete button. */
 
 function undoInput() {
-	display = new Array();
-	// display += buttonValue;
-	getDisplay();
-	display = screen.textContent;
+	display = display.slice(0, -1);
+	screen.textContent = display; 
+
+	if (display.length < 1) {
+		clearScreen(); 
+	}
+
+	
 }
+
+
+screen.addEventListener("click", getDisplay);
+clear.addEventListener("click", clearScreen);
+undo.addEventListener("click", undoInput);
+equal.addEventListener("click", getResult);
 
 // Footer date - Updated automatically
 
-const date =  new Date().getFullYear(); 
-document.getElementById('year').innerHTML = date; 
+const date = new Date().getFullYear();
+document.getElementById("year").innerHTML = date;
 
 
- 
