@@ -6,9 +6,9 @@ This repository will feature projects I built using frontend technologies. I wil
 
 
 
-|Challenges:|Status |comment|Last Updated|
-|:----------|:------:|:--------------:|:--------------:|
-|[Calculator ➗📱](https://github.com/simeon4real/projects/tree/master/Calculator)| Work in progress  | [View live version](https://simeon4real.github.io/projects/Calculator/index.html) |18th January, 2020. |
+| Challenges:                                                                      |      Status      |                                      comment                                      |    Last Updated     |
+| :------------------------------------------------------------------------------- | :--------------: | :-------------------------------------------------------------------------------: | :-----------------: |
+| [Calculator ➗📱](https://github.com/simeon4real/projects/tree/master/Calculator) | Work in progress | [View live version](https://simeon4real.github.io/projects/Calculator/index.html) | 2nd February, 2020. |
 
 
 
