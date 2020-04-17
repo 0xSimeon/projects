@@ -18,7 +18,9 @@
 A summary about yourself (must include your hobbies and interests).
 Add a contact form at the bottom of your page.
 However you want the page to look like is up to you, BUT  an attractive and presentable page is a bonus. */
-
+:root {
+	--box-shadow: 0 .3rem .1rem rgba(0, 0, 0, 0.3); 
+}
 *,
 *::before,
 *::after {
@@ -42,12 +44,7 @@ body {
 }
 
 .heading__primary {
-	background: linear-gradient(
-		106deg,
-		hsl(211.10000000000002, 100%, 50%) 44%,
-		RGBA(3, 44, 166, 0.8) 29%
-	);
-	color: #fff;
+	color: rgba(3, 44, 166, 0.8);
 	padding: 2rem;
 	text-align: center;
 }
@@ -63,7 +60,12 @@ span {
 
 nav {
 	padding: 2rem;
-	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: var(--box-shadow); 
+	background: linear-gradient(
+		120deg,
+		hsl(211.10000000000002, 100%, 50%) 44%,
+		RGBA(3, 44, 166, 0.8) 29%
+	);
 }
 
 .nav__list {
@@ -82,9 +84,8 @@ nav {
 	font-family: inherit;
 	font-weight: 700;
 	text-decoration: none;
-	color: inherit;
 	font-size: 1.7rem;
-	color: rgba(3, 44, 166, 0.8);
+	color: #fff;
 	text-transform: capitalize;
 }
 
@@ -95,6 +96,7 @@ nav {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	color: rgba(3, 44, 166, 0.5);
+	box-shadow: 0 6px 16px rgba(3, 44, 166, 0.1);
 }
 .hero__intro {
 	font-size: 3.5rem;
@@ -109,6 +111,7 @@ nav {
 	font-size: 2rem;
 	font-weight: 300;
 	margin-bottom: 2.5rem;
+	font-family: Poppins, sans-serif;
 }
 
 .small__text {
@@ -129,21 +132,16 @@ nav {
 	box-shadow: 0 1rem 1.5rem rgba(68, 74, 81, 0.4);
 	transform: scale(1);
 	margin: 1.5rem 0;
-	transition: all .2s; 
+	transition: all 0.2s;
 	text-decoration: none;
 	text-transform: lowercase;
-	outline: none; 
+	outline: none;
 }
 
 .hero__link:hover {
 	border: none;
 	text-decoration: none;
 	transform: scale(1.1);
-}
-
-picture {
-	grid-column: 2/3;
-	grid-row: 1/1;
 }
 
 .hero__image {
@@ -157,24 +155,67 @@ picture {
 	width: 75vw;
 	height: 90vw;
 	object-fit: cover;
+	background-size: cover;
 }
 
 .hero__title--opacity {
 	color: rgba(3, 44, 166, 0.5);
 }
 
-.upper {
-	text-transform: uppercase;
+.skills {
+	padding: 3rem;
+	background: #2193b0; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#6dd5ed,
+		#2193b0
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#6dd5ed,
+		#2193b0
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #fff;
+	box-shadow: var(--box-shadow); 
 }
 
-.skills {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+.skills__text {
+	font-family: Poppins, sans-serif;
+}
+
+.skills__title {
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.skills__paragraph {
+	width: 50%;
+	margin: 2rem auto;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.skills__list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.skills__item {
+	flex-basis: 25%;
+}
+
+.skills__img {
+	width: 70%;
 }
 
 .about {
-	background: rgba(3, 44, 166, 0.8);
 	padding: 2rem;
+	color:rgba(3, 44, 166, 0.5); 
+	box-shadow: var(--box-shadow); 
 }
 
 .about__details {
@@ -183,7 +224,6 @@ picture {
 .about__title {
 	font-size: 3.5rem;
 	text-align: center;
-	color: #fff;
 	text-transform: capitalize;
 }
 
@@ -194,7 +234,6 @@ picture {
 	padding: 1rem;
 	list-style: none;
 	margin: 1rem auto;
-	color: #fff;
 	/* justify-content: space-between;  */
 }
 
@@ -212,9 +251,14 @@ picture {
 	}
 
 	.hero__text {
-		flex-basis: unset; 
+		flex-basis: unset;
 	}
 	picture {
-		margin-top: 2rem; 
-	} 
+		margin-top: 2rem;
+	}
+
+	.skills__paragraph {
+		width: 100%;
+		text-align: unset;
+	}
 }
