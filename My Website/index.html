@@ -33,7 +33,7 @@
           <p class="hero__paragraph">I'm a frontend {web} developer currently living in Rivers state, Nigeria. I develop seamless web applications and digital products.  A developer who is passionate and eager to learn more.  
           </p> 
           <p class="hero__paragraph">I had the opportunity to work on projects for Start.ng, Google Student Developer Club <span class="small__text">(AKSU)</span>...</p>
-          <a class="hero__link" href="https://github.com/simeon4real">View My projects</a>
+          <a class="btn" href="https://github.com/simeon4real">View My projects</a>
         </div>
  
         <picture>
@@ -109,7 +109,7 @@
         <h2 class="about__title">Hobbies & Interests</h2>
         <ul class="about__info">
         <li class="about__item">Learning new things</li>
-        <li class="about__item">Programming/Coding</li>
+        <li class="about__item">Programming / Coding</li>
         <li class="about__item">Listening to Music</li>
         <li class="about__item">Surfing the internet</li>
         <li class="about__item">Cooking</li>
@@ -118,16 +118,22 @@
         </ul>
       </div>
       </section>
-      
-      <form action="#">
+      <div class="form">
         <h2 class="form__heading">
-          Get in touch
-        </h2>
-        <label><input type="text" placeholder="Name" name="name" id="name" aria-label="name" required></label>
-        <label><input type="email" placeholder="Email address" name="email" id="email" aria-label="email"></label>
-        <label for="message"><textarea name="message" id="message" cols="30" rows="10" placeholder="Hi Simeon. I am contacting you with regards to ...."></textarea></label>
-        <input type="button" value="Submit" aria-label="sumbit-button">
-      </form>
+        Get in touch
+      </h2> 
+        <form action="#">
+         
+          <label><input class="form__input" type="text" placeholder="Name" name="name" id="name" aria-label="name" required> </label>
+          <label><input class="form__input"  type="email" placeholder="Email address" name="email" id="email" aria-label="email" required></label>
+          <label for="message"><textarea name="message" id="message"  cols="30" rows="10" placeholder="Hi Simeon. I am contacting you with regards to ...."></textarea></label>
+          <div class="submit">
+            <input type="button" value="Submit" aria-label="sumbit-button" class="btn form__btn">
+          </div>
+          
+        </form>
+      </div>
+      
 
       <footer>
         <p>Copyright &copy; 2020.</p> 
