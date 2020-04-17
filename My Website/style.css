@@ -210,4 +210,11 @@ picture {
 	.nav__item {
 		margin: 1rem 0;
 	}
+
+	.hero__text {
+		flex-basis: unset; 
+	}
+	picture {
+		margin-top: 2rem; 
+	} 
 }
