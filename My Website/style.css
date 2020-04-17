@@ -22,132 +22,192 @@ However you want the page to look like is up to you, BUT  an attractive and pres
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: Poppins, sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.7;
-  width: 100%;
-  max-width: 100%;
+	font-family: Poppins, sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.7;
+	width: 100%;
+	max-width: 100%;
 }
 
 .heading__primary {
-  background: linear-gradient(
-    106deg,
-    hsl(211.10000000000002, 100%, 50%) 44%,
-    RGBA(3, 44, 166, 0.8) 29%
-  );
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
+	background: linear-gradient(
+		106deg,
+		hsl(211.10000000000002, 100%, 50%) 44%,
+		RGBA(3, 44, 166, 0.8) 29%
+	);
+	color: #fff;
+	padding: 2rem;
+	text-align: center;
 }
 h1 {
-  font-size: 4rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+	font-size: 4rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+span {
 }
 
 nav {
-  padding: 2rem;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav__list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .nav__item {
-  padding: 1rem;
-  margin: 0 3rem 1rem 3rem;
+	padding: 1rem;
+	margin: 0 3rem 1rem 3rem;
 }
 
 .nav__link {
-  font-family: inherit;
-  font-weight: 700;
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.7rem;
-  color: rgba(3, 44, 166, 0.8);
-  text-transform: capitalize;
+	font-family: inherit;
+	font-weight: 700;
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.7rem;
+	color: rgba(3, 44, 166, 0.8);
+	text-transform: capitalize;
 }
 
 .hero {
-  padding: 2rem;
-  margin: 1.5rem 0;
+	padding: 2rem;
+	margin: 1.5rem 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	color: rgba(3, 44, 166, 0.5);
 }
-.hero__title,
-.skills__title {
-  text-align: center;
-  font-size: 3.5rem;
-  color: rgba(3, 44, 166, 0.8);
+.hero__intro {
+	font-size: 3.5rem;
+}
+
+.hero__name {
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+.hero__paragraph {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-bottom: 2.5rem;
+}
+
+.small__text {
+	font-size: 1.4rem;
+}
+
+.hero__text {
+	flex-basis: 45%;
+}
+
+.hero__link {
+	cursor: pointer;
+	font-weight: 900;
+	padding: 1.2rem 3rem;
+	display: inline-block;
+	color: blue;
+	border-radius: 3rem;
+	box-shadow: 0 1rem 1.5rem rgba(68, 74, 81, 0.4);
+	transform: scale(1);
+	margin: 1.5rem 0;
+	transition: all .2s; 
+	text-decoration: none;
+	text-transform: lowercase;
+	outline: none; 
+}
+
+.hero__link:hover {
+	border: none;
+	text-decoration: none;
+	transform: scale(1.1);
+}
+
+picture {
+	grid-column: 2/3;
+	grid-row: 1/1;
+}
+
+.hero__image {
+	width: 20vw;
+	max-width: 30rem;
+	height: 30vw;
+	max-height: 450px;
+	border: 1rem solid white;
+	box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.4);
+	border-radius: 2.5rem;
+	width: 75vw;
+	height: 90vw;
+	object-fit: cover;
 }
 
 .hero__title--opacity {
-  color: rgba(3, 44, 166, 0.5);
+	color: rgba(3, 44, 166, 0.5);
 }
 
 .upper {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
-
-
 .about {
-  background: rgba(3, 44, 166, 0.8);
-  padding: 2rem;
+	background: rgba(3, 44, 166, 0.8);
+	padding: 2rem;
 }
 
 .about__details {
-  margin: 1rem auto;
+	margin: 1rem auto;
 }
 .about__title {
-  font-size: 3.5rem;
-  text-align: center;
-  color: #fff; 
-  text-transform: capitalize;
+	font-size: 3.5rem;
+	text-align: center;
+	color: #fff;
+	text-transform: capitalize;
 }
 
 .about__info {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%; 
-  padding: 1rem;
-  list-style: none;
-  margin: 1rem auto;
-  color: #fff; 
-  /* justify-content: space-between;  */
-} 
-
-.about__item {
-  flex-basis: 50%;
-  padding: .5rem;  
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	padding: 1rem;
+	list-style: none;
+	margin: 1rem auto;
+	color: #fff;
+	/* justify-content: space-between;  */
 }
 
-
+.about__item {
+	flex-basis: 50%;
+	padding: 0.5rem;
+}
 
 @media only screen and (max-width: 31.25em) {
-  html {
-    font-size: 50%;
-  }
-  .nav__item {
-    margin: 1rem 0;
-  }
+	html {
+		font-size: 50%;
+	}
+	.nav__item {
+		margin: 1rem 0;
+	}
 }
