@@ -1,0 +1,153 @@
+/*  Color Theme Swatches in Hex  .Glowing-Blue-1-hex {
+  color: #230a59;
+}
+.Glowing-Blue-2-hex {
+  color: #3e38f2;
+}
+.Glowing-Blue-3-hex {
+  color: #0029fa;
+}
+.Glowing-Blue-4-hex {
+  color: #5c73f2;
+}
+.Glowing-Blue-5-hex {
+  color: #829fd9;
+} */
+
+/*Your bio-data e.g( name, state of origin, date of birth, address, occupation,home town, slack ID,picture)
+A summary about yourself (must include your hobbies and interests).
+Add a contact form at the bottom of your page.
+However you want the page to look like is up to you, BUT  an attractive and presentable page is a bonus. */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  width: 100%;
+  max-width: 100%;
+}
+
+.heading__primary {
+  background: linear-gradient(
+    106deg,
+    hsl(211.10000000000002, 100%, 50%) 44%,
+    RGBA(3, 44, 166, 0.8) 29%
+  );
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+nav {
+  padding: 2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  padding: 1rem;
+  margin: 0 3rem 1rem 3rem;
+}
+
+.nav__link {
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.7rem;
+  color: rgba(3, 44, 166, 0.8);
+  text-transform: capitalize;
+}
+
+.hero {
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+.hero__title,
+.skills__title {
+  text-align: center;
+  font-size: 3.5rem;
+  color: rgba(3, 44, 166, 0.8);
+}
+
+.hero__title--opacity {
+  color: rgba(3, 44, 166, 0.5);
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+
+
+.about {
+  background: rgba(3, 44, 166, 0.8);
+  padding: 2rem;
+}
+
+.about__details {
+  margin: 1rem auto;
+}
+.about__title {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fff; 
+  text-transform: capitalize;
+}
+
+.about__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; 
+  padding: 1rem;
+  list-style: none;
+  margin: 1rem auto;
+  color: #fff; 
+  /* justify-content: space-between;  */
+} 
+
+.about__item {
+  flex-basis: 50%;
+  padding: .5rem;  
+}
+
+
+
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+  .nav__item {
+    margin: 1rem 0;
+  }
+}
