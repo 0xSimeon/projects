@@ -19,7 +19,7 @@ A summary about yourself (must include your hobbies and interests).
 Add a contact form at the bottom of your page.
 However you want the page to look like is up to you, BUT  an attractive and presentable page is a bonus. */
 :root {
-	--box-shadow: 0 .3rem .1rem rgba(0, 0, 0, 0.3); 
+	--box-shadow: 0 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 *,
 *::before,
@@ -60,7 +60,7 @@ span {
 
 nav {
 	padding: 2rem;
-	box-shadow: var(--box-shadow); 
+	box-shadow: var(--box-shadow);
 	background: linear-gradient(
 		120deg,
 		hsl(211.10000000000002, 100%, 50%) 44%,
@@ -122,7 +122,7 @@ nav {
 	flex-basis: 45%;
 }
 
-.hero__link {
+.btn {
 	cursor: pointer;
 	font-weight: 900;
 	padding: 1.2rem 3rem;
@@ -136,9 +136,10 @@ nav {
 	text-decoration: none;
 	text-transform: lowercase;
 	outline: none;
+	border: none;
 }
 
-.hero__link:hover {
+.btn:hover {
 	border: none;
 	text-decoration: none;
 	transform: scale(1.1);
@@ -177,16 +178,18 @@ nav {
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	color: #fff;
-	box-shadow: var(--box-shadow); 
+	box-shadow: var(--box-shadow);
 }
 
 .skills__text {
 	font-family: Poppins, sans-serif;
 }
 
-.skills__title {
+.skills__title,
+.form__heading {
 	font-size: 4rem;
 	font-weight: 700;
+	color: #fff;
 	text-align: center;
 }
 
@@ -214,8 +217,8 @@ nav {
 
 .about {
 	padding: 2rem;
-	color:rgba(3, 44, 166, 0.5); 
-	box-shadow: var(--box-shadow); 
+	color: rgba(3, 44, 166, 0.5);
+	box-shadow: var(--box-shadow);
 }
 
 .about__details {
@@ -242,6 +245,109 @@ nav {
 	padding: 0.5rem;
 }
 
+.form {
+	background-color: rgba(33, 147, 176, .5); /* fallback for old browsers */
+	background-color: -webkit-linear-gradient(
+		to right,
+		rgba(109, 213, 237, 0.8), 
+		rgba(33, 147, 176, 0.8)
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background-color: linear-gradient(
+		to right,
+		rgba(109, 213, 237, 0.8),
+		rgba(33, 147, 176, 0.8)
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 2rem;
+
+	background-image: url(
+		'https://res.cloudinary.com/dlu8hugb3/image/upload/v1587145406/bg-form-desktop.png');
+	background-size: cover;
+	background-blend-mode: normal;
+}
+/* 
+form {
+	padding: 2rem;
+	color: blue; 
+	box-shadow: var(--box-shadow); 
+	width: 60%; 
+	margin: 0 auto; 
+	background: #fff;
+
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem; 
+	padding: 2rem; 
+	font-size: 2rem; 
+} */
+
+form {
+	width: 60%;
+	background-color: #fff;
+	border-radius: 2rem;
+	margin: 2rem auto 3rem auto;
+	box-shadow: 0.1rem 1rem 0 rgba(62, 60, 73, 0.15);
+	font-size: 1.5rem;
+	padding: 2rem;
+}
+
+.form__input {
+	font-family: inherit;
+	color: inherit;
+	padding: 2rem;
+	display: block;
+	width: 85%;
+	margin: 1rem auto;
+	border-radius: 0.5rem;
+	border: 1.5px solid #f8dddd;
+}
+.form__input:focus {
+	outline: none;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid #55c57a;
+}
+.form__input:focus:invalid {
+	border-bottom: 3px solid #ff7a7a;
+}
+.form__input::-webkit-placeholder {
+	color: #938cb8;
+}
+
+textarea {
+	width: 100%;
+	margin: 1rem auto;
+	display: block;
+	width: 85%;
+	padding: 1rem;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+/* input[type=button] {
+	width: 100%;  
+} */
+
+.submit {
+	width: 80%;
+	margin: 1rem auto;
+}
+
+.form__btn {
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+::placeholder {
+	opacity: 0.7;
+	font-weight: 300;
+	font-style: italic;
+	font-family: inherit;
+	font-size: 1.5rem;
+}
+
 @media only screen and (max-width: 31.25em) {
 	html {
 		font-size: 50%;
@@ -260,5 +366,9 @@ nav {
 	.skills__paragraph {
 		width: 100%;
 		text-align: unset;
+	}
+
+	.about__info {
+		width: 100%;
 	}
 }
