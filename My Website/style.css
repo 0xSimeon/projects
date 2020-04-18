@@ -80,7 +80,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	color: rgba(3, 44, 166, 0.5);
+	color: rgba(3, 44, 166, 0.8);
 	box-shadow: 0 6px 16px rgba(3, 44, 166, 0.1);
 }
 .hero__intro {
@@ -98,9 +98,9 @@ nav {
 
 .hero__paragraph {
 	font-size: 2rem;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 2.5rem;
-	font-family: Poppins, sans-serif;
+	font-family: Poppins, sans-serif; 
 }
 
 .small__text {
@@ -148,7 +148,7 @@ nav {
 
 .skills {
 	padding: 3rem;
-	background: linear-gradient(to right, #6dd5ed, #2193b0);
+	background: hsl(211.10000000000002, 100%, 50%); 
 	color: #fff;
 	box-shadow: var(--box-shadow);
 }
@@ -189,7 +189,7 @@ nav {
 
 .about {
 	padding: 2rem;
-	color: rgba(3, 44, 166, 0.5);
+	color: rgba(3, 44, 166, 0.8);
 	box-shadow: var(--box-shadow);
 }
 
@@ -217,7 +217,7 @@ nav {
 }
 
 .form {
-	background-color: rgba(33, 147, 176, 0.5);
+	background-color: 	rgba(3, 44, 166, 0.8);
 	padding: 2rem;
 	background-image: url("https://res.cloudinary.com/dlu8hugb3/image/upload/v1587145406/bg-form-desktop.png");
 	background-size: cover;
@@ -277,7 +277,7 @@ textarea {
 	font-size: 2rem;
 	text-transform: capitalize;
 	color: #fff;
-	background-color: rgba(33, 147, 176, 0.5);
+	background-color: rgba(3, 44, 166, 0.8);
 	background-image: url("https://res.cloudinary.com/dlu8hugb3/image/upload/v1587145406/bg-form-desktop.png");
 	background-size: cover;
 	background-blend-mode: normal;
