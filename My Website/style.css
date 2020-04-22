@@ -37,7 +37,7 @@ a {
 }
 h1 {
 	font-size: 4rem;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-style: italic;
 }
@@ -86,12 +86,13 @@ nav {
 }
 .hero__intro {
 	font-size: 3.5rem;
+	font-family: "Playfair Display", serif;
 }
 
 .hero__name {
 	font-size: 4rem;
 	text-transform: uppercase;
-	font-family: "Playfair Display", serif;
+	font-family: 'Poppins', sans-serif; 
 	-webkit-animation: bounceInLeft 1.3s  ease-in-out .4s;  
 	animation: bounceInLeft 1.3s  ease-in-out .4s;  
  
