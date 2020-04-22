@@ -1,7 +1,8 @@
 :root {
 	--box-shadow: 0 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
 	--red: rgb(255, 0, 0);
-	--white: #fff; 
+	--white: #fff;
+	--shadow: rgba(0, 0, 0, 0.3); 
 }
 *,
 *::before,
@@ -149,7 +150,7 @@ nav {
 .skills {
 	padding: 3rem;
 	background: hsl(211.10000000000002, 100%, 50%); 
-	color: #fff;
+	color: var(--white); 
 	box-shadow: var(--box-shadow);
 }
 
@@ -158,12 +159,32 @@ nav {
 }
 
 
+
+
 .skills__title,
 .form__heading {
 	font-size: 4rem;
 	font-weight: 700;
-	color: #fff;
+	color: var(--white);  
 	text-align: center;
+
+}
+
+.skills__title {
+	text-transform: capitalize;
+    transform: skewY(-3deg);
+	margin: 1rem auto;
+	width: 70%; 
+}
+
+.style {
+	background: linear-gradient(to right bottom, hsl(211.10000000000002, 100%, 50%), RGBA(3, 44, 166, 0.4));
+    padding: 1rem 2rem;
+    font-family: "Playfair Display", serif;
+}
+
+.style--pad {
+	padding: .5rem 1rem; 
 }
 
 .skills__paragraph {
@@ -233,6 +254,34 @@ form {
 	box-shadow: 0.1rem 1rem 0 rgba(62, 60, 73, 0.15);
 	font-size: 1.5rem;
 	padding: 2rem;
+}
+
+.form__heading {
+	text-shadow: 6px 6px var(--shadow),
+				 5.75px 5.75px var(--shadow),
+				 5.75px 5.75px var(--shadow),
+				 5.5px 5.5px var(--shadow),
+				 5.25px 5.25px var(--shadow),
+				 5px 5px var(--shadow),
+				 4.75px 4.75px var(--shadow),
+				 4.5px 4.5px var(--shadow),
+				 4.25px 4.25px var(--shadow),
+				 4px 4px var(--shadow),
+				 3.75px 3.75px var(--shadow),
+				 3.5px 3.5px var(--shadow),
+				 3.25px 3.25px var(--shadow),
+				 3px 3px var(--shadow),
+				 2.75px 2.75px var(--shadow),
+				 2.5px 2.5px var(--shadow),
+				 2.25px 2.25px var(--shadow),
+				 2px 2px var(--shadow),
+				 1.75px 1.75px var(--shadow),
+				 1.5px 1.5px var(--shadow),
+				 1.25px 1.25px var(--shadow),
+				 1px 1px var(--shadow),
+				 0.75px 0.75px var(--shadow),
+				 0.5px 0.5px var(--shadow),
+				 0.25px 0.25px var(--shadow);  
 }
 
 .form__input {
@@ -453,6 +502,10 @@ footer {
 	}
 	picture {
 		margin-top: 2rem;
+	}
+
+	.skills__title {
+		width: 100%; 
 	}
 
 	.skills__paragraph {
