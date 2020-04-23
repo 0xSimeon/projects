@@ -228,6 +228,7 @@ nav {
 .about__info {
 	display: flex;
 	flex-wrap: wrap;
+	font-size: 1.6rem;
 	width: 50%;
 	padding: 1rem;
 	list-style: none;
