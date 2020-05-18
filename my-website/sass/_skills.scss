@@ -1,0 +1,82 @@
+.skills {
+    padding: 2rem;
+    // margin-top: -4rem; 
+	// background: hsl(211.10000000000002, 100%, 50%);
+	background: #0099ff; 
+	color: $white;
+	box-shadow: $box-shadow;
+
+	&__text {
+		font-family: $font-primary;
+	}
+
+	&__title,
+	.form__heading {  
+		font-size: 4rem;
+        font-weight: 700;
+        font-family: $font-secondary;
+		color: $white;
+		text-align: center;
+    }
+    
+    &__title {
+        transform: skewY(-2deg);
+        margin: 0; 
+
+        & span {
+            border-bottom: 3px solid #fff;
+        }
+    }
+
+    &__paragraph {
+        width: 50%;
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    &__item {
+        flex-basis: 25%;
+    }
+    
+    &__img {
+        width: 70%;
+    }
+    &__wave  {
+        overflow: hidden;
+        height: 150px; 
+    
+        & svg {
+            display: block; 
+            
+        }
+        
+    }
+}
+
+
+
+   
+
+
+// .style {
+// 	background: linear-gradient(
+// 		to right bottom,
+// 		hsl(211.10000000000002, 100%, 50%),
+// 		RGBA(3, 44, 166, 0.4)
+// 	);
+// 	padding: 1rem;
+// }
+
+.style--pad {
+	padding: 0.5rem 1rem;
+}
+
+

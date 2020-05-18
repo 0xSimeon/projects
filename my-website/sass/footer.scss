@@ -1,0 +1,45 @@
+.footer {
+	background: linear-gradient(to right bottom, #000000, #434343);
+	color: rgba(255, 255, 255, 0.5);
+	padding: 2rem;
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding: 2rem;
+	}
+
+	&__link {
+		display: inline-block; 
+		transition: all 0.2s;    
+	}
+
+	&__text {
+		text-align: center;  
+	}
+
+	&__text-link {
+		color: $white;
+		transition: all 0.2s;
+	}
+}
+
+// pulse animation for heart
+.pulse {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+
+.footer__link:hover,
+.footer__text-link:hover,
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-whatsapp-square:hover,
+.fa-github-square:hover {
+	color: rgba(255, 255, 255, 0.7);
+}

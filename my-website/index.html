@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simeon Udoh &mdash; Frontend Web Developer</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css"/> 
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav">
+        <h1 class="nav__heading">Simeon Udoh</h1>
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link"><i class="fas fa-home"></i> home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
-            <li class="nav__item"><a href="#form" class="nav__link">contact</a></li>
+            <li class="nav__item"><a href="about.html" class="nav__link">about me</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">contact</a></li>
           </ul>
       </nav>
     </header>
       <section class="hero">
         <div class="hero__text">
           <h2 class="hero__intro">Hi There!</h2>
-          <h2 class="hero__name">I am Simeon Udoh<span class="dot">.</span></h2>
-          <p class="hero__paragraph">I'm a frontend <span class="web">{web}</span> developer currently living in Rivers state, Nigeria. I develop <i class="fas fa-code"></i> seamless web applications and digital products.  A developer who is passionate and eager to learn more.  
+          <h2 class="hero__name">I am Simeon Udoh.</h2>
+          <p class="hero__paragraph">I'm a frontend <span class="web">web</span> developer in Port Harcourt, Nigeria. I develop  seamless web applications and digital products. 
           </p> 
-          <p class="hero__paragraph">I had the opportunity to work on projects for <a href="https://start.ng" class="hero__link">Start.ng</a> , Google Student Developer Club <span class="small__text">(AKSU)</span>...</p>
-          <a class="btn" href="https://github.com/simeon4real?tab=repositories">View My projects <i class="fas fa-link"></i></a>
-        </div>
+
+          <p class="hero__paragraph">A developer who is passionate and eager to learn more.
+
+            I had the opportunity to work on projects for <a class="hero__paragraph-link"href="https://start.ng"><span class="u-text">Start.NG</span></a> , <a class="hero__paragraph-link"href="https://dscaksu.com.ng"><span class="u-text">DSC (AKSU) </span></a>and my <a href="#" class="hero__paragraph-link"><span class="u-text">personal projects</span></a>.</p>
+
+          <div class="hero__buttons">
+            <a class="btn hero__btn" href="https://drive.google.com/file/d/1dm3q-xM8V64EB8NuG3ifGBQ1M8De-FJ8/view?usp=sharing">View My CV  <i class="fas fa-file-word"></i></a>
+          <a class="btn hero__btn" href="https://github.com/simeon4real?tab=repositories">View My Projects <i class="fas fa-link"></i></a>
+          </div>
+          
+        </div>   
+
+        
  
         <picture>
-          <source srcset="https://res.cloudinary.com/dlu8hugb3/image/upload/v1587084470/simi.webp" type="image/webp" aria-label="website owner - Simeon Udoh" title="Simeon Udoh">
-          <img class="hero__image" src="https://res.cloudinary.com/dlu8hugb3/image/upload/v1587085041/simi1.jpg" alt="Simeon Udoh"> 
+          <img class="hero__image" src="images/webdeveloper.svg" alt="photo of a man"> 
         </picture>
 
       
       </section>
+     
+    <div class="skills__wave" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-20.88,157.10 C219.52,-76.87 158.57,191.94 501.12,87.41 L500.00,150.33 L0.00,150.33 Z" style="stroke: none; fill: #0099ff; "></path></svg></div> 
+      <!-- <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,74.7C384,53,480,75,576,96C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div> -->
 
       <section class="skills">
-        <div class="skills__text">
-          <h2 class="skills__title"><span class="style">What I do?</span></h2> 
-          <p class="skills__paragraph">I create web apps using HTML, CSS, <span class="style style--pad">Javascript.</span> I also use tools like  <span class="style style--pad">Webpack</span> for bundling files, Babel to compile and polyfill ES6 Javascript codes <i class="fas fa-code"></i> back to ES5 and <span class="style style--pad">Npm</span> to install packages. </p>
+        <div class="skills__text"> 
+          <h2 class="skills__title">What I <span>can do.</span></h2> 
+          <p class="skills__paragraph">I create web applications using HTML, CSS, <span class="style style--pad">JAVASCRIPT.
+
           <p class="skills__paragraph">I'm actively adding more web technologies to my <toolbox. class="style style--pad">toolbox. </span></p>
         </div>
-        
+        <!-- Used Webp img format with relevant fallbacks-->
         <ul class="skills__list">
         <li class="skills__item">  <picture class="skills__img">
           <source srcset="https://res.cloudinary.com/dlu8hugb3/image/upload/v1587129742/html.webp" type="image/webp" aria-label="html logo" title="HTML5">
@@ -74,38 +91,11 @@
         </picture></li>
 
       </section> 
-      <section class="about" id="about"> 
-        <div class="about__details">
-        <h2 class="about__title"> Hobbies & Interests</h2>
-        <ul class="about__info">
-        <li class="about__item"><i class="fab fa-leanpub"></i> Learning new things</li>
-        <li class="about__item"><i class="fas fa-code"></i> Programming / Coding</li>
-        <li class="about__item"><i class="fas fa-headphones"></i> Listening to Music</li>
-        <li class="about__item"><i class="fas fa-mobile"></i> Surfing the internet</li>
-        <li class="about__item"><i class="fas fa-utensils"></i> Cooking</li>
-        <li class="about__item"><i class="fas fa-swimmer"></i> Swimming</li>
-        <li class="about__item"><i class="fas fa-gamepad"></i> Playing games</li>
-        </ul>
-      </div>
-      </section>
-      <div class="form" id="form">
-        <h2 class="form__heading">
-          Get in touch. <i class="fas fa-pen"></i> I'd love to hear from you!
-      </h2> 
-        <form action="#">
-         
-          <label><input class="form__input" type="text" placeholder="Name" name="name" id="name" aria-label="name" required> </label>
-          <label><input class="form__input"  type="email" placeholder="Email address" name="email" id="email" aria-label="email" required></label>
-          <label for="message"><textarea name="message" id="message"  cols="30" rows="10" placeholder="Hi Simeon. I am contacting you with regards to ...."></textarea></label>
-          <div class="submit">
-            <input type="button" value="Submit" aria-label="sumbit-button" class="btn form__btn" >
-          </div>
-          
-        </form>
-      </div>
+      
+      
       
 
-      <footer>
+      <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item"><a class="footer__link" href="https://facebook.com/simeon.udoh.71" title="Add on Facebook"> <i class="fab fa-facebook-square fa-3x"></i> </a></li>
           <li class="footer__item"><a class="footer__link" title="Follow on Twitter" href="https://twitter.com/TechviberNG"> <i class="fab fa-twitter-square fa-3x"></i> </a></li>

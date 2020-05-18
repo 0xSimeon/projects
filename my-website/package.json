@@ -1,0 +1,33 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "A landing page for Simeon Udoh.",
+  "main": "script.js",
+  "scripts": {
+    "watch:sass": "node-sass -w sass/main.scss css/style.css ",
+    "devserver": "live-server --browser=firefox",
+		"start": "npm-run-all --parallel devserver watch:sass",
+		"compile:sass": "node-sass sass/main.scss css/styles.comp.css"
+ 
+      
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simeon4real/projects/tree/master/my-website"
+  },
+  "keywords": [
+    "Frontend",
+    "web-dev",
+    "developer"
+  ],
+  "author": "Simeon Udoh",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.1"
+  }
+}

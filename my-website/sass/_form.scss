@@ -1,0 +1,92 @@
+.form {
+	background-color: 	rgba(3, 44, 166, 0.8);
+	padding: 2rem;
+	background-image: url("https://res.cloudinary.com/dlu8hugb3/image/upload/v1587145406/bg-form-desktop.png");
+	background-size: cover;
+	background-blend-mode: normal; 
+
+	&__heading {  
+		font-size: 4rem;
+		font-weight: 700;
+		color: $white;
+		text-align: center;
+    }
+
+
+	&__input {
+		font-family: inherit;
+		color: inherit;
+		padding: 2rem;
+		display: block;
+		width: 85%;
+		margin: 1rem auto;
+		border-radius: 0.5rem;
+		border: 1.5px solid #f8dddd;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+			border-bottom: 3px solid #55c57a;
+		}
+
+		&:focus:invalid {
+			border-bottom: 3px solid #ff7a7a;
+		}
+		&::-webkit-placeholder {
+			color: #938cb8;
+		}
+	}
+
+
+	
+	
+}
+
+form {
+	width: 60%;
+	background-color: #fff;
+	border-radius: 2rem;
+	margin: 2rem auto 3rem auto;
+	box-shadow: 0.1rem 1rem 0 rgba(62, 60, 73, 0.15);
+	font-size: 1.5rem;
+	padding: 2rem;
+}
+
+
+
+
+
+textarea {
+	width: 100%;
+	margin: 1rem auto;
+	display: block;
+	width: 85%;
+	padding: 1rem;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.submit {
+	width: 80%;
+	margin: 1rem auto;
+}
+
+.form__btn {
+	width: 100%;
+	font-family: inherit;
+	font-size: 2rem;
+	text-transform: capitalize;
+	color: #fff;
+	background-color: rgba(3, 44, 166, 0.8);
+	background-image: url("https://res.cloudinary.com/dlu8hugb3/image/upload/v1587145406/bg-form-desktop.png");
+	background-size: cover;
+	background-blend-mode: normal;
+}
+
+::placeholder {
+	opacity: 0.4;
+	font-weight: 300;
+	font-style: italic;
+	font-family: inherit;
+	font-size: 1.5rem;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Simeon Udoh | Frontend Developer</title>
+    <link rel="stylesheet" href="css/style.css"/> 
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+
+
+    <header>
+        <nav class="nav">
+          <h1 class="nav__heading">Simeon Udoh</h1>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="index.html" class="nav__link"><i class="fas fa-home"></i> home</a></li>
+              <li class="nav__item"><a href="about.html" class="nav__link">about</a></li>
+              <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+            </ul>
+        </nav>
+      </header>
+
+    <div class="form" id="form">
+        <h2 class="form__heading">
+          Get in touch. <i class="fas fa-pen"></i> I'd love to hear from you!
+      </h2> 
+        <form action="#">
+         
+          <label><input class="form__input" type="text" placeholder="Name" name="name" id="name" aria-label="name" required> </label>
+          <label><input class="form__input"  type="email" placeholder="Email address" name="email" id="email" aria-label="email" required></label>
+          <label for="message"><textarea name="message" id="message"  cols="30" rows="10" placeholder="Hi Simeon. I am contacting you with regards to ...."></textarea></label>
+          <div class="submit">
+            <input type="button" value="Submit" aria-label="sumbit-button" class="btn form__btn" >
+          </div>
+          
+        </form>
+      </div>
+
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="https://facebook.com/simeon.udoh.71" title="Add on Facebook"> <i class="fab fa-facebook-square fa-3x"></i> </a></li>
+          <li class="footer__item"><a class="footer__link" title="Follow on Twitter" href="https://twitter.com/TechviberNG"> <i class="fab fa-twitter-square fa-3x"></i> </a></li>
+          <li class="footer__item"><a class="footer__link" href="https://github.com/simeon4real"><i class="fab fa-github-square fa-3x"></i></a></li>
+          <li class="footer__item"><a class="footer__link" href="https://wa.me/2348146953393"><i class="fab fa-whatsapp-square fa-3x"></i></a></li>
+        </ul>
+        <p class="footer__text">Copyright &copy; <span id="year"></span>.</p> 
+        <p class="footer__text">Developed <i class="fas fa-code"></i> and maintained with  <i class="fas fa-heart fa-2x"></i>  by <a href="http://github.com/simeon4real" class="footer__text-link">Simeon Udoh.</a></p>
+        <script src="https://kit.fontawesome.com/27c5e12069.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script> 
+      </footer> 
+</body>
+</html>

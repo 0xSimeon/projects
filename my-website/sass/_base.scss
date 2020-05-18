@@ -1,0 +1,24 @@
+
+*,
+*::before,
+*::after {
+	@include reset; 
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	
+	font-size: 1.5rem;
+	line-height: 1.7;
+	width: 100%;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}

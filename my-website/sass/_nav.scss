@@ -1,0 +1,84 @@
+
+
+.nav {
+	padding: 1rem;
+	box-shadow: $box-shadow;
+	display: flex; 
+	justify-content: space-between;
+	align-items: center; 
+	background: linear-gradient(
+		120deg,
+		hsl(211.10000000000002, 100%, 50%) 44%,
+		RGBA(3, 44, 166, 0.8) 29%
+	);
+
+	&__heading {
+		font-family: $font-secondary; 
+		font-size: 4rem;
+		font-weight: 700; 
+		color: #fff; 
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	&__item {
+		padding: 1rem;
+		margin: 0 3rem 1rem 3rem;
+	}
+	
+	&__link {
+		font-family: $font-secondary; 
+		text-transform: uppercase; 
+		font-weight: 700;
+		font-size: 1.7rem;
+		color: #fff;
+	}
+	
+	&__link:hover {
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+
+}
+
+
+
+
+
+
+
+
+/*
+* ICONS
+*/
+
+.fa-3x {
+	transition: all 0.2s;
+}
+
+.fa-facebook-square {
+	color: #1877f2;
+}
+.fa-twitter-square {
+	color: #1da1f2;
+}
+.fa-whatsapp-square {
+	color: #25d366;
+}
+.fa-github-square {
+	color: #7c7070;
+}
+
+.fa-heart {
+	color: $red;
+	-webkit-animation: pulse .4s  infinite;  
+	animation: pulse .4s   infinite; 
+}
+
+
+
