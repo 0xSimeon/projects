@@ -15,10 +15,10 @@ This repository will feature projects I built using frontend technologies. I wil
    - SASS
    - MARKDOWN
 
-| Projects:                                                                         |      Status      |                                      comment                                      |    Last Updated     |
-| :-------------------------------------------------------------------------------- | :--------------: | :-------------------------------------------------------------------------------: | :-----------------: |
-| [Calculator ➗📱](https://github.com/simeon4real/projects/tree/master/Calculator) | Work in progress | [View live version](https://simeon4real.github.io/projects/Calculator) | 2nd February, 2020. |
-| [Personal Website](https://github.com/simeon4real/projects/tree/master/my-website/)            | Work in progress |         [View v0.2 ](https://simeon4real.github.io/projects/my-website/)          |  18th May, 2020.  |
-| [Javascript Quiz app](https://github.com/simeon4real/Simeon-Udoh/tree/master/frontend-task-4) | Work in progress | [View live version ](https://simeon4real.github.io/Simeon-Udoh/frontend-task-4/) |  May 5, 2020.  | 
+|Project   | Repo  | Status      |   Comment       |    Last Updated     | 
+| :-------------------------------------------------------------------------------- | :--------------: | :-------------------------------------------------------------------------------: | :-----------------: | :-----------------: |
+| Calculator ➗📱 | [Link](https://github.com/simeon4real/Calculator) |  Work in progress | [View live version](https://calculatorjs-app.netlify.app/) | 2nd February, 2020. |
+| My Personal Website   | [Link](https://github.com/simeon4real/my-website)       | Work in progress |         [View v0.2 ](https://simicode.me)    |  21st May, 2020.  |
+| Javascript Quiz app | [Link](https://github.com/simeon4real/Javascript-quiz)| Work in progress | [View live version ](https://blissful-brahmagupta-ab328c.netlify.app/) |  May 5, 2020.  | 
 
 
